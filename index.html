@@ -1,1101 +1,1078 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-    <link href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css?fbclid=IwAR1n8-rtc3tft6LdEyXMBNSRNyAzPP8wE9usYfjOn-1j1FvYRdCcu6XgNfM" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" />
+    <link
+      href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css?fbclid=IwAR1n8-rtc3tft6LdEyXMBNSRNyAzPP8wE9usYfjOn-1j1FvYRdCcu6XgNfM"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css" />
     <script src="./main.js" defer></script>
-    
-    
-    <title>Document</title>
-</head>
-<body>
 
+    <title>Document</title>
+  </head>
+  <body>
     <!-- Header -->
 
-    <div class="header blue-bg ">
-        <div class="container">
-            <div class="header-content">
+    <div class="header blue-bg">
+      <div class="container">
+        <div class="header-content">
+          <ul class="header-navbar">
+            <li>
+              <img src="./logo.png" alt="" />
+            </li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Product</a>
+            </li>
+          </ul>
+          <div class="header-search">
+            <input
+              type="text"
+              name="headerSearch"
+              placeholder="Search your keyword" />
+            <div class="icon">
+              <i class="fa-light fa-magnifying-glass"></i>
+            </div>
+          </div>
 
-                <ul class="header-navbar">
-                    <li>
-                        <img src="./logo.png" alt="">
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Product</a>
-                    </li>
-                </ul>
-                <div class="header-search">
-                    <input type="text" name="headerSearch" placeholder="Search your keyword">
-                    <div class="icon">
-                        <i class="fa-light fa-magnifying-glass"></i>
-                    </div>
-                    
+          <ul class="header-settings">
+            <li class="user">
+              <i class="fa-solid fa-user"></i>
+              <ul class="user-settings">
+                <li class="heading">
+                  <a href="#">My account</a>
+                </li>
+                <li>
+                  <a href="#">Login</a>
+                </li>
+                <li>
+                  <a href="#">Register</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <label class="cart" for="cart-detail-btn">
+                <i class="fa-sharp fa-solid fa-bag-shopping">
+                  <div class="badge-cart">1</div>
+                </i>
+              </label>
+              <input type="checkbox" name="" id="cart-detail-btn" />
+              <label class="overlay" for="cart-detail-btn"></label>
+              <div class="cart-detail">
+                <div class="heading">
+                  <h5>Cart</h5>
+                  <label for="cart-detail-btn">
+                    <i class="fa-regular fa-xmark"></i>
+                  </label>
                 </div>
-        
-                <ul class="header-settings">
-                    <li class="user">
-                        <i class="fa-solid fa-user"></i>
-                        <ul class="user-settings">
-                            <li class="heading">
-                                <a href="#">My account</a>
-                            </li>
-                            <li>
-                                <a href="#">Login</a>
-                            </li>
-                            <li>
-                                <a href="#">Register</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label class="cart" for="cart-detail-btn">
-                            <i class="fa-sharp fa-solid fa-bag-shopping">
-                                <div class="badge-cart">1</div>
-                            </i>
-                        </label>
-                        <input type="checkbox" name="" id="cart-detail-btn">
-                        <label class="overlay" for="cart-detail-btn"></label>
-                        <div class="cart-detail">
-                            <div class="heading">
-                                <h5>Cart</h5>
-                                <label for="cart-detail-btn">
-                                    <i class="fa-regular fa-xmark"></i>
-                                </label>
-                            </div>
-                            <div class="products-list">
-                                <div class="product-item">
-                                    <img src="./logo.png" alt="">
-                                    <div class="content">
-                                        <div class="name">
-                                            Aspire Dron Model
-                                        </div>
-                                        <div class="price">
-                                            <p>1 x <span>$60.00</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="delete-product">
-                                        <i class="fa-regular fa-xmark"></i>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <img src="./logo.png" alt="">
-                                    <div class="content">
-                                        <div class="name">
-                                            Aspire Dron Model
-                                        </div>
-                                        <div class="price">
-                                            <p>1 x <span>$60.00</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="delete-product">
-                                        <i class="fa-regular fa-xmark"></i>
-                                    </div>
-                                </div>
-                               
-                            </div>
+                <div class="products-list">
+                  <div class="product-item">
+                    <img src="./logo.png" alt="" />
+                    <div class="content">
+                      <div class="name">Aspire Dron Model</div>
+                      <div class="price">
+                        <p>1 x <span>$60.00</span></p>
+                      </div>
+                    </div>
+                    <div class="delete-product">
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                  <div class="product-item">
+                    <img src="./logo.png" alt="" />
+                    <div class="content">
+                      <div class="name">Aspire Dron Model</div>
+                      <div class="price">
+                        <p>1 x <span>$60.00</span></p>
+                      </div>
+                    </div>
+                    <div class="delete-product">
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="checkout">
-                                <div class="price">
-                                    <h5>Total</h5>
-                                    <h5>$120.00</h5>
-                                </div>
-                                <div class="btn-view-cart">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    VIEW CART
-                                </div>
-                                <div class="btn-checkout">
-                                    <div class="icon">
-                                        <i class="fa-regular fa-arrow-right-from-bracket"></i>
-                                    </div>
-                                    CHECKOUT
-                                </div>
-                            </div>
-
-                        </div>    
-                    </li>
-                </ul>
-            </div>  
+                <div class="checkout">
+                  <div class="price">
+                    <h5>Quantity</h5>
+                    <h5>5</h5>
+                  </div>
+                  <div class="price">
+                    <h5>Total</h5>
+                    <h5>$120.00</h5>
+                  </div>
+                  <div class="btn-view-cart">
+                    <div class="icon">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    VIEW CART
+                  </div>
+                  <div class="btn-checkout">
+                    <div class="icon">
+                      <i class="fa-regular fa-arrow-right-from-bracket"></i>
+                    </div>
+                    CHECKOUT
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
 
-    <div style="margin-top: 80px;"></div>
+    <div style="margin-top: 80px"></div>
 
     <!-- Carousel  -->
-    
-    <div class="container-fluid " style="background-image: url(./s1.jpg); 
-        background-repeat: no-repeat;background-size: cover;padding: 60px 0px;">
-        <div class="row">
-            <div class="owl-carousel owl-theme ct-slide">
-                <div class="item">
-                    <div class="slide-content">
-                        <div class="col-7">
-                            <img src="./s1_1.png" alt="">
 
-                        </div>
-                        <div class="col-5">
-                            <div class="content">
-                                <h2>Best Product</h2>
-                                <h1>Mount Carved 2200XD</h1>
-                                <p>
-                                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                    It has roots in a piece of classical Latin literature.
-                                </p>
-                                <div class="button">
-                                    Shop Now
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+    <div
+      class="container-fluid"
+      style="
+        background-image: url(./s1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 60px 0px;
+      ">
+      <div class="row">
+        <div class="owl-carousel owl-theme ct-slide">
+          <div class="item">
+            <div class="slide-content">
+              <div class="col-7">
+                <img src="./s1_1.png" alt="" />
+              </div>
+              <div class="col-5">
+                <div class="content">
+                  <h2>Best Product</h2>
+                  <h1>Mount Carved 2200XD</h1>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature.
+                  </p>
+                  <div class="button">Shop Now</div>
                 </div>
-                <div class="item">
-                    <div class="slide-content">
-                        <div class="col-7">
-                            <img src="./s1_1.png" alt="">
-                        </div>
-                        <div class="col-5">
-                            <div class="content">
-                                <h2>Best Product</h2>
-                                <h1>Mount Carved 2200XD</h1>
-                                <p>
-                                    Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                    It has roots in a piece of classical Latin literature.
-                                </p>
-                                <div class="button">
-                                    Shop Now
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>    
+          </div>
+          <div class="item">
+            <div class="slide-content">
+              <div class="col-7">
+                <img src="./s1_1.png" alt="" />
+              </div>
+              <div class="col-5">
+                <div class="content">
+                  <h2>Best Product</h2>
+                  <h1>Mount Carved 2200XD</h1>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature.
+                  </p>
+                  <div class="button">Shop Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-            
+    </div>
 
     <!-- Container -->
 
-    <div class="container" style="margin-top: 40px;">
-        <div class="row">
-            <div class="col-9">
-                <div class="hot-deal" style="background-image: url(./b1_1.jpg); 
-                background-repeat: no-repeat;background-size: cover;">
-                    <div class="content">
-                        <h2>HOT DEAL</h2>
-                        <h1>Kemioo DX24 Headphone</h1>
-                        <p>
-                            Contrary to popular belief, Lorem Ipsum is not simply random text.
-                             It has roots in a piece of classical Latin literature
-                        </p>
-                        <button>GET COUPON</button>  
-                    </div>
-                    <img src="./b1_2.png" alt="">
-                </div>
+    <div class="container" style="margin-top: 40px">
+      <div class="row">
+        <div class="col-9">
+          <div
+            class="hot-deal"
+            style="
+              background-image: url(./b1_1.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            ">
+            <div class="content">
+              <h2>HOT DEAL</h2>
+              <h1>Kemioo DX24 Headphone</h1>
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature
+              </p>
+              <button>GET COUPON</button>
             </div>
-            <div class="col-3">
-                <!-- Product  -->
-                <div class="product">
+            <img src="./b1_2.png" alt="" />
+          </div>
+        </div>
+        <div class="col-3">
+          <!-- Product  -->
+          <div class="product">
+            <div class="image">
+              <img src="./p1.jpg" alt="" class="main-img" />
+              <img src="./p2.jpg" alt="" class="sub-img" />
+              <div class="product-tag">
+                <div class="like">
+                  <i class="fa-light fa-heart"></i>
+                </div>
+                <h5>New</h5>
+              </div>
+              <div class="product-action">
+                <div class="compare">
+                  <i class="fa-thin fa-sliders-up"></i>
+                  <div class="p-tooltip">Compare</div>
+                </div>
+                <div class="quickview">
+                  <i class="fa-light fa-eye"></i>
+                  <div class="p-tooltip">Quick View</div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h4>Ponno 360 Camera</h4>
+              <h5>$ 140.00</h5>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <div class="count">(200&#43;)</div>
+              </div>
+              <div class="btn-add-product">ADD TO CART</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="featured-product">
+            <ul class="featured-product-btn">
+              <li class="active">On Sale</li>
+              <li>New Product</li>
+              <li>Best Deal</li>
+            </ul>
+            <div class="row">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="product">
                     <div class="image">
-                        <img src="./p1.jpg" alt="" class="main-img">
-                        <img src="./p2.jpg" alt="" class="sub-img">
-                        <div class="product-tag">
-                            <div class="like">
-                                <i class="fa-light fa-heart"></i>
-                            </div>
-                            <h5>New</h5>
+                      <img src="./p1.jpg" alt="" class="main-img" />
+                      <img src="./p2.jpg" alt="" class="sub-img" />
+                      <div class="product-tag">
+                        <div class="like">
+                          <i class="fa-light fa-heart"></i>
                         </div>
-                        <div class="product-action">
-                            <div class="compare">
-                                <i class="fa-thin fa-sliders-up"></i>
-                                <div class="p-tooltip">
-                                    Compare
-                                </div>
-                            </div>
-                            <div class="quickview">
-                                <i class="fa-light fa-eye"></i>
-                                <div class="p-tooltip">
-                                    Quick View
-                                </div>
-                            </div>
+                        <h5>New</h5>
+                      </div>
+                      <div class="product-action">
+                        <div class="compare">
+                          <i class="fa-thin fa-sliders-up"></i>
+                          <div class="p-tooltip">Compare</div>
                         </div>
+                        <div class="quickview">
+                          <i class="fa-light fa-eye"></i>
+                          <div class="p-tooltip">Quick View</div>
+                        </div>
+                      </div>
                     </div>
                     <div class="content">
-                        <h4>Ponno 360 Camera</h4>
-                        <h5>$ 140.00</h5>
-                        <div class="review-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <div class="count">
-                                (200&#43;)
-                            </div>
-                        </div>
-                        <div class="btn-add-product">
-                            ADD TO CART
-                        </div>
+                      <h4>Ponno 360 Camera</h4>
+                      <h5>$ 140.00</h5>
+                      <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <div class="count">(200&#43;)</div>
+                      </div>
+                      <div class="btn-add-product">ADD TO CART</div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-       
-        
-        <div class="row">
-            <div class="col-12">
-                <div class="featured-product">
-                    <ul class="featured-product-btn">
-                        <li class="active">On Sale</li>
-                        <li>New Product</li>
-                        <li>Best Deal</li>
-                    </ul>
-                    <div class="row">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="product">
-                                    <div class="image">
-                                        <img src="./p1.jpg" alt="" class="main-img">
-                                        <img src="./p2.jpg" alt="" class="sub-img">
-                                        <div class="product-tag">
-                                            <div class="like">
-                                                <i class="fa-light fa-heart"></i>
-                                            </div>
-                                            <h5>New</h5>
-                                        </div>
-                                        <div class="product-action">
-                                            <div class="compare">
-                                                <i class="fa-thin fa-sliders-up"></i>
-                                                <div class="p-tooltip">
-                                                    Compare
-                                                </div>
-                                            </div>
-                                            <div class="quickview">
-                                                <i class="fa-light fa-eye"></i>
-                                                <div class="p-tooltip">
-                                                    Quick View
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Ponno 360 Camera</h4>
-                                        <h5>$ 140.00</h5>
-                                        <div class="review-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <div class="count">
-                                                (200&#43;)
-                                            </div>
-                                        </div>
-                                        <div class="btn-add-product">
-                                            ADD TO CART
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product">
-                                    <div class="image">
-                                        <img src="./p1.jpg" alt="" class="main-img">
-                                        <img src="./p2.jpg" alt="" class="sub-img">
-                                        <div class="product-tag">
-                                            <div class="like">
-                                                <i class="fa-light fa-heart"></i>
-                                            </div>
-                                            <h5>New</h5>
-                                        </div>
-                                        <div class="product-action">
-                                            <div class="compare">
-                                                <i class="fa-thin fa-sliders-up"></i>
-                                                <div class="p-tooltip">
-                                                    Compare
-                                                </div>
-                                            </div>
-                                            <div class="quickview">
-                                                <i class="fa-light fa-eye"></i>
-                                                <div class="p-tooltip">
-                                                    Quick View
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Ponno 360 Camera</h4>
-                                        <h5>$ 140.00</h5>
-                                        <div class="review-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <div class="count">
-                                                (200&#43;)
-                                            </div>
-                                        </div>
-                                        <div class="btn-add-product">
-                                            ADD TO CART
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product">
-                                    <div class="image">
-                                        <img src="./p1.jpg" alt="" class="main-img">
-                                        <img src="./p2.jpg" alt="" class="sub-img">
-                                        <div class="product-tag">
-                                            <div class="like">
-                                                <i class="fa-light fa-heart"></i>
-                                            </div>
-                                            <h5>New</h5>
-                                        </div>
-                                        <div class="product-action">
-                                            <div class="compare">
-                                                <i class="fa-thin fa-sliders-up"></i>
-                                                <div class="p-tooltip">
-                                                    Compare
-                                                </div>
-                                            </div>
-                                            <div class="quickview">
-                                                <i class="fa-light fa-eye"></i>
-                                                <div class="p-tooltip">
-                                                    Quick View
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Ponno 360 Camera</h4>
-                                        <h5>$ 140.00</h5>
-                                        <div class="review-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <div class="count">
-                                                (200&#43;)
-                                            </div>
-                                        </div>
-                                        <div class="btn-add-product">
-                                            ADD TO CART
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product">
-                                    <div class="image">
-                                        <img src="./p1.jpg" alt="" class="main-img">
-                                        <img src="./p2.jpg" alt="" class="sub-img">
-                                        <div class="product-tag">
-                                            <div class="like">
-                                                <i class="fa-light fa-heart"></i>
-                                            </div>
-                                            <h5>New</h5>
-                                        </div>
-                                        <div class="product-action">
-                                            <div class="compare">
-                                                <i class="fa-thin fa-sliders-up"></i>
-                                                <div class="p-tooltip">
-                                                    Compare
-                                                </div>
-                                            </div>
-                                            <div class="quickview">
-                                                <i class="fa-light fa-eye"></i>
-                                                <div class="p-tooltip">
-                                                    Quick View
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Ponno 360 Camera</h4>
-                                        <h5>$ 140.00</h5>
-                                        <div class="review-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <div class="count">
-                                                (200&#43;)
-                                            </div>
-                                        </div>
-                                        <div class="btn-add-product">
-                                            ADD TO CART
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product">
-                                    <div class="image">
-                                        <img src="./p1.jpg" alt="" class="main-img">
-                                        <img src="./p2.jpg" alt="" class="sub-img">
-                                        <div class="product-tag">
-                                            <div class="like">
-                                                <i class="fa-light fa-heart"></i>
-                                            </div>
-                                            <h5>New</h5>
-                                        </div>
-                                        <div class="product-action">
-                                            <div class="compare">
-                                                <i class="fa-thin fa-sliders-up"></i>
-                                                <div class="p-tooltip">
-                                                    Compare
-                                                </div>
-                                            </div>
-                                            <div class="quickview">
-                                                <i class="fa-light fa-eye"></i>
-                                                <div class="p-tooltip">
-                                                    Quick View
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Ponno 360 Camera</h4>
-                                        <h5>$ 140.00</h5>
-                                        <div class="review-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <div class="count">
-                                                (200&#43;)
-                                            </div>
-                                        </div>
-                                        <div class="btn-add-product">
-                                            ADD TO CART
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product">
-                                    <div class="image">
-                                        <img src="./p1.jpg" alt="" class="main-img">
-                                        <img src="./p2.jpg" alt="" class="sub-img">
-                                        <div class="product-tag">
-                                            <div class="like">
-                                                <i class="fa-light fa-heart"></i>
-                                            </div>
-                                            <h5>New</h5>
-                                        </div>
-                                        <div class="product-action">
-                                            <div class="compare">
-                                                <i class="fa-thin fa-sliders-up"></i>
-                                                <div class="p-tooltip">
-                                                    Compare
-                                                </div>
-                                            </div>
-                                            <div class="quickview">
-                                                <i class="fa-light fa-eye"></i>
-                                                <div class="p-tooltip">
-                                                    Quick View
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Ponno 360 Camera</h4>
-                                        <h5>$ 140.00</h5>
-                                        <div class="review-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <div class="count">
-                                                (200&#43;)
-                                            </div>
-                                        </div>
-                                        <div class="btn-add-product">
-                                            ADD TO CART
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="product">
-                                    <div class="image">
-                                        <img src="./p1.jpg" alt="" class="main-img">
-                                        <img src="./p2.jpg" alt="" class="sub-img">
-                                        <div class="product-tag">
-                                            <div class="like">
-                                                <i class="fa-light fa-heart"></i>
-                                            </div>
-                                            <h5>New</h5>
-                                        </div>
-                                        <div class="product-action">
-                                            <div class="compare">
-                                                <i class="fa-thin fa-sliders-up"></i>
-                                                <div class="p-tooltip">
-                                                    Compare
-                                                </div>
-                                            </div>
-                                            <div class="quickview">
-                                                <i class="fa-light fa-eye"></i>
-                                                <div class="p-tooltip">
-                                                    Quick View
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <h4>Ponno 360 Camera</h4>
-                                        <h5>$ 140.00</h5>
-                                        <div class="review-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <i class="fa-light fa-star"></i>
-                                            <div class="count">
-                                                (200&#43;)
-                                            </div>
-                                        </div>
-                                        <div class="btn-add-product">
-                                            ADD TO CART
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="item">
+                  <div class="product">
+                    <div class="image">
+                      <img src="./p1.jpg" alt="" class="main-img" />
+                      <img src="./p2.jpg" alt="" class="sub-img" />
+                      <div class="product-tag">
+                        <div class="like">
+                          <i class="fa-light fa-heart"></i>
                         </div>
-                    </div>    
+                        <h5>New</h5>
+                      </div>
+                      <div class="product-action">
+                        <div class="compare">
+                          <i class="fa-thin fa-sliders-up"></i>
+                          <div class="p-tooltip">Compare</div>
+                        </div>
+                        <div class="quickview">
+                          <i class="fa-light fa-eye"></i>
+                          <div class="p-tooltip">Quick View</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4>Ponno 360 Camera</h4>
+                      <h5>$ 140.00</h5>
+                      <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <div class="count">(200&#43;)</div>
+                      </div>
+                      <div class="btn-add-product">ADD TO CART</div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-6">
-                <a class="product-ads">
-                    <img src="./b2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-6">
-                <a class="product-ads">
-                    <img src="./b3.jpg" alt="">
-                </a>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-12">
-                <div class="menu-product">
-                    <h2>Laptops & Computers</h2>
-                    <ul>
-                        <li>Computer</li>
-                        <li>Laptop</li>
-                        <li>Camera</li>
-                        <li>Speaker</li>
-                        <li>Others</li>
-                    </ul>
+                <div class="item">
+                  <div class="product">
+                    <div class="image">
+                      <img src="./p1.jpg" alt="" class="main-img" />
+                      <img src="./p2.jpg" alt="" class="sub-img" />
+                      <div class="product-tag">
+                        <div class="like">
+                          <i class="fa-light fa-heart"></i>
+                        </div>
+                        <h5>New</h5>
+                      </div>
+                      <div class="product-action">
+                        <div class="compare">
+                          <i class="fa-thin fa-sliders-up"></i>
+                          <div class="p-tooltip">Compare</div>
+                        </div>
+                        <div class="quickview">
+                          <i class="fa-light fa-eye"></i>
+                          <div class="p-tooltip">Quick View</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4>Ponno 360 Camera</h4>
+                      <h5>$ 140.00</h5>
+                      <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <div class="count">(200&#43;)</div>
+                      </div>
+                      <div class="btn-add-product">ADD TO CART</div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-4">
-                <div class="single-product">
-                    <img src="./p1_(1).jpg" alt="">
-                    <div class="content">
-                        <h4>Xer Jenon Dslr</h4>
-                        <h5>$ 140.00</h5>
-                        <div class="review-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <div class="count">
-                                (200&#43;)
-                            </div>
+                <div class="item">
+                  <div class="product">
+                    <div class="image">
+                      <img src="./p1.jpg" alt="" class="main-img" />
+                      <img src="./p2.jpg" alt="" class="sub-img" />
+                      <div class="product-tag">
+                        <div class="like">
+                          <i class="fa-light fa-heart"></i>
                         </div>
-                    </div>
-                </div>               
-            </div>
-            <div class="col-4">
-                <div class="single-product">
-                    <img src="./p1_(1).jpg" alt="">
-                    <div class="content">
-                        <h4>Xer Jenon Dslr</h4>
-                        <h5>$ 140.00</h5>
-                        <div class="review-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <div class="count">
-                                (200&#43;)
-                            </div>
+                        <h5>New</h5>
+                      </div>
+                      <div class="product-action">
+                        <div class="compare">
+                          <i class="fa-thin fa-sliders-up"></i>
+                          <div class="p-tooltip">Compare</div>
                         </div>
-                    </div>
-                </div>               
-            </div>
-            <div class="col-4">
-                <div class="single-product">
-                    <img src="./p1_(1).jpg" alt="">
-                    <div class="content">
-                        <h4>Xer Jenon Dslr</h4>
-                        <h5>$ 140.00</h5>
-                        <div class="review-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <div class="count">
-                                (200&#43;)
-                            </div>
+                        <div class="quickview">
+                          <i class="fa-light fa-eye"></i>
+                          <div class="p-tooltip">Quick View</div>
                         </div>
+                      </div>
                     </div>
-                </div>               
-            </div>
-            <div class="col-4">
-                <div class="single-product">
-                    <img src="./p1_(1).jpg" alt="">
                     <div class="content">
-                        <h4>Xer Jenon Dslr</h4>
-                        <h5>$ 140.00</h5>
-                        <div class="review-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <div class="count">
-                                (200&#43;)
-                            </div>
-                        </div>
+                      <h4>Ponno 360 Camera</h4>
+                      <h5>$ 140.00</h5>
+                      <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <div class="count">(200&#43;)</div>
+                      </div>
+                      <div class="btn-add-product">ADD TO CART</div>
                     </div>
-                </div>               
-            </div>
-            <div class="col-4">
-                <div class="single-product">
-                    <img src="./p1_(1).jpg" alt="">
-                    <div class="content">
-                        <h4>Xer Jenon Dslr</h4>
-                        <h5>$ 140.00</h5>
-                        <div class="review-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <div class="count">
-                                (200&#43;)
-                            </div>
-                        </div>
-                    </div>
-                </div>               
-            </div>
-            <div class="col-4">
-                <div class="single-product">
-                    <img src="./p1_(1).jpg" alt="">
-                    <div class="content">
-                        <h4>Xer Jenon Dslr</h4>
-                        <h5>$ 140.00</h5>
-                        <div class="review-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                            <div class="count">
-                                (200&#43;)
-                            </div>
-                        </div>
-                    </div>
-                </div>               
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="banner">
-                    <img src="./b4.jpg" alt="">
+                  </div>
                 </div>
+                <div class="item">
+                  <div class="product">
+                    <div class="image">
+                      <img src="./p1.jpg" alt="" class="main-img" />
+                      <img src="./p2.jpg" alt="" class="sub-img" />
+                      <div class="product-tag">
+                        <div class="like">
+                          <i class="fa-light fa-heart"></i>
+                        </div>
+                        <h5>New</h5>
+                      </div>
+                      <div class="product-action">
+                        <div class="compare">
+                          <i class="fa-thin fa-sliders-up"></i>
+                          <div class="p-tooltip">Compare</div>
+                        </div>
+                        <div class="quickview">
+                          <i class="fa-light fa-eye"></i>
+                          <div class="p-tooltip">Quick View</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4>Ponno 360 Camera</h4>
+                      <h5>$ 140.00</h5>
+                      <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <div class="count">(200&#43;)</div>
+                      </div>
+                      <div class="btn-add-product">ADD TO CART</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product">
+                    <div class="image">
+                      <img src="./p1.jpg" alt="" class="main-img" />
+                      <img src="./p2.jpg" alt="" class="sub-img" />
+                      <div class="product-tag">
+                        <div class="like">
+                          <i class="fa-light fa-heart"></i>
+                        </div>
+                        <h5>New</h5>
+                      </div>
+                      <div class="product-action">
+                        <div class="compare">
+                          <i class="fa-thin fa-sliders-up"></i>
+                          <div class="p-tooltip">Compare</div>
+                        </div>
+                        <div class="quickview">
+                          <i class="fa-light fa-eye"></i>
+                          <div class="p-tooltip">Quick View</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4>Ponno 360 Camera</h4>
+                      <h5>$ 140.00</h5>
+                      <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <div class="count">(200&#43;)</div>
+                      </div>
+                      <div class="btn-add-product">ADD TO CART</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product">
+                    <div class="image">
+                      <img src="./p1.jpg" alt="" class="main-img" />
+                      <img src="./p2.jpg" alt="" class="sub-img" />
+                      <div class="product-tag">
+                        <div class="like">
+                          <i class="fa-light fa-heart"></i>
+                        </div>
+                        <h5>New</h5>
+                      </div>
+                      <div class="product-action">
+                        <div class="compare">
+                          <i class="fa-thin fa-sliders-up"></i>
+                          <div class="p-tooltip">Compare</div>
+                        </div>
+                        <div class="quickview">
+                          <i class="fa-light fa-eye"></i>
+                          <div class="p-tooltip">Quick View</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h4>Ponno 360 Camera</h4>
+                      <h5>$ 140.00</h5>
+                      <div class="review-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <i class="fa-light fa-star"></i>
+                        <div class="count">(200&#43;)</div>
+                      </div>
+                      <div class="btn-add-product">ADD TO CART</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
+      <div class="row">
+        <div class="col-6">
+          <a class="product-ads">
+            <img src="./b2.jpg" alt="" />
+          </a>
+        </div>
+        <div class="col-6">
+          <a class="product-ads">
+            <img src="./b3.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="menu-product">
+            <h2>Laptops & Computers</h2>
+            <ul>
+              <li>Computer</li>
+              <li>Laptop</li>
+              <li>Camera</li>
+              <li>Speaker</li>
+              <li>Others</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="single-product">
+            <img src="./p1_(1).jpg" alt="" />
+            <div class="content">
+              <h4>Xer Jenon Dslr</h4>
+              <h5>$ 140.00</h5>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <div class="count">(200&#43;)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="single-product">
+            <img src="./p1_(1).jpg" alt="" />
+            <div class="content">
+              <h4>Xer Jenon Dslr</h4>
+              <h5>$ 140.00</h5>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <div class="count">(200&#43;)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="single-product">
+            <img src="./p1_(1).jpg" alt="" />
+            <div class="content">
+              <h4>Xer Jenon Dslr</h4>
+              <h5>$ 140.00</h5>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <div class="count">(200&#43;)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="single-product">
+            <img src="./p1_(1).jpg" alt="" />
+            <div class="content">
+              <h4>Xer Jenon Dslr</h4>
+              <h5>$ 140.00</h5>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <div class="count">(200&#43;)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="single-product">
+            <img src="./p1_(1).jpg" alt="" />
+            <div class="content">
+              <h4>Xer Jenon Dslr</h4>
+              <h5>$ 140.00</h5>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <div class="count">(200&#43;)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="single-product">
+            <img src="./p1_(1).jpg" alt="" />
+            <div class="content">
+              <h4>Xer Jenon Dslr</h4>
+              <h5>$ 140.00</h5>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <i class="fa-light fa-star"></i>
+                <div class="count">(200&#43;)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="banner">
+            <img src="./b4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
-
 
     <!-- Product detail -->
 
     <div class="container-fluid breadcrumb">
-        <div class="container">
-            <ul >
-               <li class="breadcrumb-item">
-                    Home
-               </li>
-               <li class="breadcrumb-item active">
-                    Product Details
-               </li> 
-            </ul>
-        </div>
+      <div class="container">
+        <ul>
+          <li class="breadcrumb-item">Home</li>
+          <li class="breadcrumb-item active">Product Details</li>
+        </ul>
+      </div>
     </div>
 
     <div class="container product-details">
-        <div class="row">
-            <div class="col-4 ">
-                <div class="product-details__img">
-                    <img src="./p1.jpg" alt="">
-                    <div class="row">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="./p1.jpg" alt="" class="main-img">
-                            </div>
-                            <div class="item">
-                                <img src="./p2.jpg" alt="" class="main-img">
-                            </div>
-                            <div class="item">
-                                <img src="./p2.jpg" alt="" class="main-img">
-                            </div>
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="product-details__img">
+            <img src="./p1.jpg" alt="" />
+            <div class="row">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <img src="./p1.jpg" alt="" class="main-img" />
                 </div>
-            </div>
-            <div class="col-8">
-                <div class="product-details__content">
-                    <div class="name">
-                        Aspire Dron Model
-                    </div>
-                    <div class="review-star d-flex align-items-center">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-light fa-star"></i>
-                        <i class="fa-light fa-star"></i>
-                        <div class="count">
-                            (200&#43;)
-                        </div>
-                    </div>
-                    <div class="price">
-                        $84.17
-                    </div>
-                    <div class="description">
-                        Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', 
-                        while we're not typically too concerned with marketing talk this particular statement 
-                        is clearly pretty accurate...
-                    </div>
-                    <ul class="list-info">
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                        <li>
-                            <h5>
-                                Brand
-                            </h5>
-                            <h6>
-                                Lenovo
-                            </h6>
-                        </li>
-                    </ul>
-                    <input type="number">
-                    <div class="btn-add">
-                        ADD  TO CART
-                    </div>
+                <div class="item">
+                  <img src="./p2.jpg" alt="" class="main-img" />
                 </div>
+                <div class="item">
+                  <img src="./p2.jpg" alt="" class="main-img" />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
+        <div class="col-8">
+          <div class="product-details__content">
+            <div class="name">Aspire Dron Model</div>
+            <div class="review-star d-flex align-items-center">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-light fa-star"></i>
+              <i class="fa-light fa-star"></i>
+              <div class="count">(200&#43;)</div>
+            </div>
+            <div class="price">$84.17</div>
+            <div class="description">
+              Canon's press material for the EOS 5D states that it 'defines (a)
+              new D-SLR category', while we're not typically too concerned with
+              marketing talk this particular statement is clearly pretty
+              accurate...
+            </div>
+            <ul class="list-info">
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+              <li>
+                <h5>Brand</h5>
+                <h6>Lenovo</h6>
+              </li>
+            </ul>
+            <input type="number" />
+            <div class="btn-add">ADD TO CART</div>
+          </div>
+        </div>
+      </div>
     </div>
 
+
+    <div class="container review">
+      <h5>Đánh giá và nhận xét của abc</h5>
+      <div class="review-content">
+        <div class="summary">
+            <div class="score">
+              <div class="score-average">
+                4.8
+              </div>
+              <div class="score-max">
+                /5
+              </div>
+            </div>
+            <div class="review-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star fail"></i>
+              <i class="fa-solid fa-star fail"></i>
+            </div>
+            <span class="count">73 đánh giá</span>
+        </div>
+        <div class="detail">
+          <ul>
+            <li>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fg" style="--percent: 80%"></div>
+              </div>
+              <div class="count">65</div>
+            </li>
+            <li>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star fail"></i>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fg" style="--percent: 10%"></div>
+              </div>
+              <div class="count">65</div>
+            </li>
+            <li>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star fail"></i>
+                <i class="fa-solid fa-star fail"></i>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fg" style="--percent: 3%"></div>
+              </div>
+              <div class="count">65</div>
+            </li>
+            <li>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star fail"></i>
+                <i class="fa-solid fa-star fail"></i>
+                <i class="fa-solid fa-star fail"></i>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fg" style="--percent: 4%"></div>
+              </div>
+              <div class="count">65</div>
+            </li>
+            <li>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star fail"></i>
+                <i class="fa-solid fa-star fail"></i>
+                <i class="fa-solid fa-star fail"></i>
+                <i class="fa-solid fa-star fail"></i>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fg" style="--percent: 3%"></div>
+              </div>
+              <div class="count">65</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h6>Nhận xét về sản phẩm</h6>
+      <div class="mod-reviews">
+        <div class="user-review">
+          <div class="review-star d-flex align-items-center">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="user-name">
+            abc
+          </div>
+          <div class="description">
+            đồ tốt
+          </div>
+        </div>
+        <div class="user-review">
+          <div class="review-star d-flex align-items-center">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="user-name">
+            abc
+          </div>
+          <div class="description">
+            đồ tốt
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
 
     <div class="container-fluid bg-dark">
-        <div class="container">
-            <div class="footer">
-                <div class="endows">
-                    <div class="endow">
-                        <div class="img">
-                            <img src="./s1.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="heading">
-                                Free Shipping
-                            </div>
-                            <div class="purport">
-                                Most product are free shipping.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="endow">
-                        <div class="img">
-                            <img src="./s2.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="heading">
-                                Customer Support
-                            </div>
-                            <div class="purport">
-                                24x7 Customer Support
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="endow">
-                        <div class="img">
-                            <img src="./s3.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="heading">
-                                Secure Payment
-                            </div>
-                            <div class="purport">
-                                Most Secure Payment for customer.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="./logo.png" alt="">
-                        <div class="social-media">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <h3>Quick Link</h3>
-                        <ul>
-                            <li>Cart</li>
-                            <li>Checkout</li>
-                            <li>Login</li>
-                            <li>Register</li>
-                            <li>Product</li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <h3>Categories</h3>
-                        <ul>
-                            <li>Laptop</li>
-                            <li>Headphone</li>
-                            <li>Mobile</li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <h3>Contact Info</h3>
-                        <ul>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa-sharp fa-solid fa-location-dot"></i>
-                                </div>
-                                <div>
-                                    lorem address south road 77 north, USA -9991
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div>
-                                    domaininfo@mail.com
-                                    company@mail.com
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa-solid fa-mobile-screen-button"></i>
-                                </div>
-                                <div>
-                                    <div>
-                                        + 755 2236 6698 22 
-                                    </div>
-                                    <div>
-                                        + 556 6666 6589 22
-                                    </div>            
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer">
+          <div class="endows">
+            <div class="endow">
+              <div class="img">
+                <img src="./s1.png" alt="" />
+              </div>
+              <div class="content">
+                <div class="heading">Free Shipping</div>
+                <div class="purport">Most product are free shipping.</div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid copy-right">
-        Copyright© All right reserved
-    </div>
+            <div class="endow">
+              <div class="img">
+                <img src="./s2.png" alt="" />
+              </div>
+              <div class="content">
+                <div class="heading">Customer Support</div>
+                <div class="purport">24x7 Customer Support</div>
+              </div>
+            </div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <div class="endow">
+              <div class="img">
+                <img src="./s3.png" alt="" />
+              </div>
+              <div class="content">
+                <div class="heading">Secure Payment</div>
+                <div class="purport">Most Secure Payment for customer.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <img src="./logo.png" alt="" />
+              <div class="social-media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+            <div class="col-3">
+              <h3>Quick Link</h3>
+              <ul>
+                <li>Cart</li>
+                <li>Checkout</li>
+                <li>Login</li>
+                <li>Register</li>
+                <li>Product</li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h3>Categories</h3>
+              <ul>
+                <li>Laptop</li>
+                <li>Headphone</li>
+                <li>Mobile</li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h3>Contact Info</h3>
+              <ul>
+                <li>
+                  <div class="icon">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>lorem address south road 77 north, USA -9991</div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>domaininfo@mail.com company@mail.com</div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                  </div>
+                  <div>
+                    <div>+ 755 2236 6698 22</div>
+                    <div>+ 556 6666 6589 22</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid copy-right">Copyright© All right reserved</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
 
     <script>
-        $('.ct-slide.owl-carousel').owlCarousel({
-    autoplay:true,
-    loop:true,
-    margin:10,
-    nav:true,
-    navText: [
-        '<i class="fa-solid fa-angle-left"></i>',
-        '<i class="fa-solid fa-angle-right"></i>'
-    ],
-    responsive:{
-        0:{
-            items:1
+      $(".ct-slide.owl-carousel").owlCarousel({
+        autoplay: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: [
+          '<i class="fa-solid fa-angle-left"></i>',
+          '<i class="fa-solid fa-angle-right"></i>',
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
         },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    },
-    })
+      });
 
-    $('.featured-product .owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    navText: [
-        '<i class="fa-solid fa-angle-left"></i>',
-        '<i class="fa-solid fa-angle-right"></i>'
-    ],
-    responsive:{
-        0:{
-            items:1
+      $(".featured-product .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: [
+          '<i class="fa-solid fa-angle-left"></i>',
+          '<i class="fa-solid fa-angle-right"></i>',
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 4,
+          },
+          1000: {
+            items: 4,
+          },
         },
-        600:{
-            items:4
+      });
+      $(".product-details .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 3,
+          },
         },
-        1000:{
-            items:4
-        }
-    },
-    })
-    $('.product-details .owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    },
-    })
-    
+      });
     </script>
-</body>
+  </body>
 </html>
