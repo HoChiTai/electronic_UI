@@ -1310,8 +1310,11 @@ input#cart-detail-btn:checked ~ .cart-detail {
   margin-bottom: 40px;
 }
 
-.input-email,
-.input-password {
+.txt-field {
+  position: relative;
+}
+
+.txt-field > input {
   width: 100%;
   margin: 16px 0;
   padding: 10px 14px;
@@ -1319,11 +1322,26 @@ input#cart-detail-btn:checked ~ .cart-detail {
   border:1px solid var(--primary-bg);
   outline: none;
 }
+.txt-field > label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  padding: 0px 4px;
+  transition: all 0.3s ease-in;
+  font-size: 18px;
+  color: #7d7d7d;
+}
 
-.input-email::placeholder,
-.input-password::placeholder {
+.txt-field > input:focus + label,
+.txt-field > input + label.active {
+  transform: translateY(-150%);
+  font-size: 16px;
+  left: 16px;
+  background-color: white;
   color: var(--primary-bg);
 }
+
 
 .btn-login {
   width: 100%;
